@@ -3,8 +3,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-
 import {
   FaFacebook,
   FaYoutube,
@@ -50,30 +48,18 @@ const callsToAction = [
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ]
 
-const links = [
-  { name: 'About', href: '/about' },
-  { name: 'Internship program', href: '#' },
-  { name: 'Projects', href: '#' },
-  { name: 'Youtube', href: 'https://youtube.com/@ar19n_99.9k?si=88OvcmwN22bPfqX' },
-]
 
-const stats = [
-  { name: 'Projects done', value: '4' },
-  { name: 'Advanced', value: 'Skill strength' },
-  { name: 'MERN Stack', value: 'Specialization' },
-  { name: 'Both Frontend and Backend', value: 'Stronger side' },
-]
 const features = [
   {
     name: 'Name',
     description:
-      'Hi, I’m Aromal M G, proudly from the beautiful city of Kollam in Kerala. I’m a full-stack developer ready to provide quality services and help bring your ideas to life. ',
+      'Hi, I&apos;m Aromal M G, proudly from the beautiful city of Kollam in Kerala. I&apos;m a full-stack developer ready to provide quality services and help bring your ideas to life. ',
     icon: FaUser ,
   },
   {
     name: 'Education',
     description:
-      'Bachelors Degree in English and Communicative English',
+      'Bachelor&apos;s Degree in English and Communicative English',
     icon: FaSchool,
   },
   {
@@ -304,7 +290,7 @@ export default function Navbar() {
 
           {/* Image */}
           <div>
-            <img
+            <Image
               src="/images/about-us-page.jpg"
               alt="Product screenshot"
               width={2432}

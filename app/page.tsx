@@ -263,7 +263,7 @@ export default function Navbar() {
       {/* Background image */}
       <Image
         alt=""
-        src="/images/accessories-laptop-purple-background-accessories-laptop-purple-background-illustration-wireless-mouse-notebook-pen-shades-317361697.jpg"
+        src="/images/laptop.jpg"
         fill
  className="absolute inset-0 -z-10 object-cover object-center blur-sm"
          priority
@@ -318,7 +318,7 @@ export default function Navbar() {
 
 
           <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-          I'm a motivated and detail-oriented Full Stack Developer, proudly from the beautiful city of Kollam in Kerala, with hands-on experience building scalable web and mobile applications.          </p>
+          I&apos;m a motivated and detail-oriented Full Stack Developer, proudly from the beautiful city of Kollam in Kerala, with hands-on experience building scalable web and mobile applications.          </p>
         </div>
 
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
@@ -382,7 +382,7 @@ export default function Navbar() {
         <Link href="https://puzzle-gamma-five.vercel.app">
           <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
             <div className="relative h-61 w-full">
-              <img
+              <Image
                 src="/images/tom.jpg"
                 alt="Game"
                 className="h-full w-full object-cover"
@@ -406,7 +406,7 @@ export default function Navbar() {
           className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
         >
           <div className="relative h-56 w-full">
-            <img
+            <Image
               src="https://www.apolloadluxhospital.co/images/academic/banner1.jpg"
               alt="Hospital management"
               className="h-full w-full object-cover"
@@ -430,7 +430,7 @@ export default function Navbar() {
           className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
         >
           <div className="relative h-66 w-full">
-            <img
+            <Image
               src="/images/Netflix Indian Movies and Web Series.jpg"
               alt="Netflix clone"
               className="h-full w-full object-cover"
