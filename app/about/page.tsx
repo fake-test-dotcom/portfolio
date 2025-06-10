@@ -53,13 +53,13 @@ const features = [
   {
     name: 'Name',
     description:
-      'Hi, I&apos;m Aromal M G, proudly from the beautiful city of Kollam in Kerala. I&apos;m a full-stack developer ready to provide quality services and help bring your ideas to life. ',
+      'Hi, I am Aromal M G, proudly from the beautiful city of Kollam in Kerala. I&apos;m a full-stack developer ready to provide quality services and help bring your ideas to life. ',
     icon: FaUser ,
   },
   {
     name: 'Education',
     description:
-      'Bachelor&apos;s Degree in English and Communicative English',
+      'Bachelors Degree in English and Communicative English',
     icon: FaSchool,
   },
   {
