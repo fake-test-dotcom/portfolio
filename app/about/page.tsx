@@ -53,7 +53,7 @@ const features = [
   {
     name: 'Name',
     description:
-      'Hi, I am Aromal M G, proudly from the beautiful city of Kollam in Kerala. I&apos;m a full-stack developer ready to provide quality services and help bring your ideas to life. ',
+      'Hi, I am Aromal M G, proudly from the beautiful city of Kollam in Kerala. I am a full-stack developer ready to provide quality services and help bring your ideas to life. ',
     icon: FaUser ,
   },
   {
