@@ -390,7 +390,7 @@ export default function Navbar() {
                   />
             </div>
             <div className="p-5">
-              <h3 className="text-xl font-semibold text-white mb-2">Games</h3>
+              <h3 className="text-xl font-semibold text-white mb-2">Image Puzzle</h3>
               <p className="text-gray-400 text-sm">
                 A responsive Puzzle game built using React Native and Expo
                 which focuses both iOS and Android platform to showcase my work
