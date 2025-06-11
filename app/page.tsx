@@ -55,7 +55,7 @@ const links = [
 ]
 
 const stats = [
-  { name: 'Projects done', value: '6' },
+  { name: 'Projects done', value: '7' },
   { name: 'Advanced', value: 'Skill strength' },
   { name: 'MERN Stack', value: 'Specialization' },
   { name: 'Both Frontend and Backend', value: 'Stonger side' },
@@ -381,12 +381,13 @@ export default function Navbar() {
         {/* Project 1 */}
         <Link href="https://puzzle-gamma-five.vercel.app">
           <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
-            <div className="relative h-61 w-full">
-              <Image
-                src="/images/tom.jpg"
-                alt="Game"
-                className="h-full w-full object-cover"
-              />
+            <div className="relative w-full h-65"> {/* height defined + relative */}
+               <Image
+                  src="/images/tom.jpg"
+                 alt="Game"
+                 fill
+                 className="object-cover rounded-xl"
+                  />
             </div>
             <div className="p-5">
               <h3 className="text-xl font-semibold text-white mb-2">Games</h3>
@@ -407,8 +408,10 @@ export default function Navbar() {
         >
           <div className="relative h-56 w-full">
             <Image
-              src="https://www.apolloadluxhospital.co/images/academic/banner1.jpg"
+              src="/images/hospital.jpg"
               alt="Hospital management"
+              width={400}
+               height={250}
               className="h-full w-full object-cover"
             />
           </div>
@@ -433,6 +436,8 @@ export default function Navbar() {
             <Image
               src="/images/Netflix Indian Movies and Web Series.jpg"
               alt="Netflix clone"
+              width={400}
+               height={250}
               className="h-full w-full object-cover"
             />
           </div>
@@ -446,6 +451,32 @@ export default function Navbar() {
             </p>
           </div>
         </div>
+        {/* Project 4 */}
+        <Link href="https://cargamea1.vercel.app/">
+        <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <div className="relative h-56 w-full">
+            <Image
+              src="/images/front page car.jpg"
+              alt="Black Street X"
+              width={400}
+               height={250}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="p-5">
+            <h3 className="text-xl font-semibold text-white mb-2">
+              Black Street X
+            </h3>
+            <p className="text-gray-400 text-sm">
+              A fun 3D car game using Next.js and React Three Fiber. 
+              It runs right in the browser and uses GLTF models for the cars
+               and environment to keep things looking smooth and realistic. 
+               You can drive around and enjoy real-time 
+               3D graphics.
+            </p>
+          </div>
+        </div>
+       </Link>
       </div>
     </section>
 
