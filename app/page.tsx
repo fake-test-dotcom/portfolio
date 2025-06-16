@@ -402,6 +402,7 @@ export default function Navbar() {
         </Link>
 
         {/* Project 2 */}
+        <Link href="https://hospm1.vercel.app/">
         <div
           onClick={() => handleUnavailableClick("Hospital Management")}
           className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
@@ -426,6 +427,7 @@ export default function Navbar() {
             </p>
           </div>
         </div>
+        </Link>
 
         {/* Project 3 */}
         <div
