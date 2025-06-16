@@ -404,10 +404,9 @@ export default function Navbar() {
         {/* Project 2 */}
         <Link href="https://hospm1.vercel.app/">
         <div
-          onClick={() => handleUnavailableClick("Hospital Management")}
           className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
         >
-          <div className="relative h-56 w-full">
+          <div className="relative h-60 w-full">
             <Image
               src="/images/hospital.jpg"
               alt="Hospital management"
@@ -423,7 +422,7 @@ export default function Navbar() {
             <p className="text-gray-400 text-sm">
               A full-stack Hospital management system that enables seamless
               communication between patients and doctors through secure video
-              calls.
+              calls.The system also support patient registration, appointment and scheduling.
             </p>
           </div>
         </div>
