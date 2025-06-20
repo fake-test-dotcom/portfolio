@@ -55,7 +55,7 @@ const links = [
 ]
 
 const stats = [
-  { name: 'Projects done', value: '7' },
+  { name: 'Projects done', value: '8' },
   { name: 'Advanced', value: 'Skill strength' },
   { name: 'MERN Stack', value: 'Specialization' },
   { name: 'Both Frontend and Backend', value: 'Stonger side' },
@@ -381,7 +381,7 @@ export default function Navbar() {
         {/* Project 1 */}
         <Link href="https://puzzle-gamma-five.vercel.app">
           <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
-            <div className="relative w-full h-65"> {/* height defined + relative */}
+            <div className="relative w-full h-50"> {/* height defined + relative */}
                <Image
                   src="/images/tom.jpg"
                  alt="Game"
@@ -406,7 +406,7 @@ export default function Navbar() {
         <div
           className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
         >
-          <div className="relative h-60 w-full">
+          <div className="relative h-50 w-full">
             <Image
               src="/images/hospital.jpg"
               alt="Hospital management"
@@ -433,7 +433,7 @@ export default function Navbar() {
           onClick={() => handleUnavailableClick("Netflix Clone")}
           className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
         >
-          <div className="relative h-66 w-full">
+          <div className="relative h-50 w-full">
             <Image
               src="/images/Netflix Indian Movies and Web Series.jpg"
               alt="Netflix clone"
@@ -455,7 +455,7 @@ export default function Navbar() {
         {/* Project 4 */}
         <Link href="https://cargamea1.vercel.app/">
         <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
-          <div className="relative h-56 w-full">
+          <div className="relative h-50 w-full">
             <Image
               src="/images/front page car.jpg"
               alt="Black Street X"
@@ -474,6 +474,32 @@ export default function Navbar() {
                and environment to keep things looking smooth and realistic. 
                You can drive around and enjoy real-time 
                3D graphics.
+            </p>
+          </div>
+        </div>
+       </Link>
+       {/* Project 5 */}
+        <Link href="https://plurtaskm4.vercel.app/">
+        <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <div className="relative h-45 w-full">
+            <Image
+              src="/images/todo1.jpg"
+              alt="Black Street X"
+              width={400}
+               height={250}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="p-5">
+            <h3 className="text-xl font-semibold text-white mb-2">
+              Plur Task 
+            </h3>
+            <p className="text-gray-400 text-sm">
+              PlurTask is a lightweight, well-optimized to-do application designed 
+              for speed, simplicity, and productivity. With a sleek user interface 
+              and smooth performance, whether you&#39;re organizing your 
+              daily routine or planning long-term goals, PlurTask helps you stay
+               focused with a seamless task management experience.
             </p>
           </div>
         </div>
