@@ -381,7 +381,7 @@ export default function Navbar() {
         {/* Project 1 */}
         <Link href="https://puzzle-gamma-five.vercel.app">
           <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
-            <div className="relative w-full h-50"> {/* height defined + relative */}
+            <div className="relative w-full h-55"> {/* height defined + relative */}
                <Image
                   src="/images/tom.jpg"
                  alt="Game"
@@ -400,13 +400,40 @@ export default function Navbar() {
             </div>
           </div>
         </Link>
+          {/* Project 6 */}
+        <Link href="https://ball-one.vercel.app/">
+        <div
+          className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
+        >
+          <div className="relative h-55 w-full">
+            <Image
+              src="/images/ballgame.jpg"
+              alt="Hospital management"
+              width={400}
+               height={250}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="p-5">
+            <h3 className="text-xl font-semibold text-white mb-2">
+              Ball Shooter 	&#40;Mobile Game&#41;
+            </h3>
+            <p className="text-gray-400 text-sm">
+             Ball Shooter is an interactive arcade-style web
+              game built using Next.js, TypeScript, and the Canvas API. It also supports
+                 touch controls for mobile providing a seamless experience
+                   no matter how you play.
+            </p>
+          </div>
+        </div>
+        </Link>
 
         {/* Project 2 */}
         <Link href="https://hospm1.vercel.app/">
         <div
           className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
         >
-          <div className="relative h-50 w-full">
+          <div className="relative h-55 w-full">
             <Image
               src="/images/hospital.jpg"
               alt="Hospital management"
@@ -433,7 +460,7 @@ export default function Navbar() {
           onClick={() => handleUnavailableClick("Netflix Clone")}
           className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
         >
-          <div className="relative h-50 w-full">
+          <div className="relative h-55 w-full">
             <Image
               src="/images/Netflix Indian Movies and Web Series.jpg"
               alt="Netflix clone"
@@ -455,7 +482,7 @@ export default function Navbar() {
         {/* Project 4 */}
         <Link href="https://cargamea1.vercel.app/">
         <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
-          <div className="relative h-50 w-full">
+          <div className="relative h-55 w-full">
             <Image
               src="/images/front page car.jpg"
               alt="Black Street X"
@@ -481,10 +508,10 @@ export default function Navbar() {
        {/* Project 5 */}
         <Link href="https://plurtaskm4.vercel.app/">
         <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
-          <div className="relative h-45 w-full">
+          <div className="relative h-50 w-full">
             <Image
               src="/images/todo1.jpg"
-              alt="Black Street X"
+              alt="todo"
               width={400}
                height={250}
               className="h-full w-full object-cover"
