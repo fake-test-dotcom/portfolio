@@ -55,7 +55,7 @@ const links = [
 ]
 
 const stats = [
-  { name: 'Projects done', value: '8' },
+  { name: 'Projects done', value: '9' },
   { name: 'Advanced', value: 'Skill strength' },
   { name: 'MERN Stack', value: 'Specialization' },
   { name: 'Both Frontend and Backend', value: 'Stonger side' },
