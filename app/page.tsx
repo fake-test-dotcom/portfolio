@@ -62,7 +62,7 @@ const stats = [
 ]
 const navLinks = [
   { name: 'About', href: '/about' },
-  { name: 'Experience', href: '/experience' },
+  { name: 'Experience', href: '/about' },
   { name: 'Projects', href: '/projects' },
 ]
 
@@ -227,34 +227,17 @@ export default function Navbar() {
 
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-100">
-              <div className="space-y-2 py-6">
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 px-3 text-base font-semibold text-gray-900 hover:bg-purple-100 transform transition-transform duration-200 ease-in-out hover:scale-110">
-                    Menu
-                    <ChevronDownIcon className="h-5 w-5 text-purple-400 group-data-open:rotate-180" aria-hidden="true" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...products, ...callsToAction].map((item) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold text-gray-900 hover:bg-purple-100 transform transition-transform duration-200 ease-in-out hover:scale-110"
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
-
-                {['About', 'Experience', 'Company'].map((item) => (
-                  <Link
-                    key={item}
-                    href="/about"
-                    className="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-purple-100 transform transition-transform duration-200 ease-in-out hover:scale-110"
-                  >
-                    {item}
-                  </Link>
-                ))}
+               <div className="space-y-2 py-6">
+        {navLinks.map((item) => (
+          <Link
+            key={item.name}
+            href={item.href}
+            className="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-purple-100 transform transition-transform duration-200 ease-in-out hover:scale-110"
+          >
+            {item.name}
+          </Link>
+        ))}
+      </div>
               </div>
               <div className="py-6">
                 <Link href="/login" className="block rounded-lg px-3 py-2.5 text-base font-semibold text-gray-900 hover:bg-purple-100 transform transition-transform duration-200 ease-in-out hover:scale-110">
@@ -262,7 +245,6 @@ export default function Navbar() {
                 </Link>
               </div>
             </div>
-          </div>
         </DialogPanel>
       </Dialog>
       
