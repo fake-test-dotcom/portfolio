@@ -83,7 +83,7 @@ export default function Home() {
                             initial={{ opacity: 0, x: i % 2 === 0 ? -200 : 200 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8, delay: i * 0.2 }}
-                            className="group perspective"
+                            className="group perspective shadow-2xl hover:shadow-purple-500/40 transition-shadow duration-300"
                         >
                             <div className="relative w-full h-72 cursor-pointer transition-transform duration-500 transform-style preserve-3d group-hover:rotate-y-180">
                                 {/* Front */}
