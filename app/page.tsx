@@ -15,16 +15,12 @@ import {
 import {
   Dialog,
   DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
   Popover,
   PopoverButton,
   PopoverGroup,
   PopoverPanel,
 } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
@@ -32,20 +28,10 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, } from '@heroicons/react/20/solid'
 
-const products = [
-  { name: 'Analytics', description: 'Understand your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Talk to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Data safety ensured', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Funnels that convert', href: '#', icon: ArrowPathIcon },
-]
 
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+
 
 const links = [
   { name: 'About', href: '/about' },
