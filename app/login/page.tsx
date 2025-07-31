@@ -19,13 +19,14 @@ export default function Login() {
       <div className="absolute inset-0 bg-black/60 z-0" />
 
       {/* Go Back Button */}
-      <Link
-        href="/"
-        className="absolute top-4 left-4 z-10 flex items-center text-white text-sm font-medium hover:underline"
-      >
-        <FaArrowLeft className="mr-2" />
-        Go Back
-      </Link>
+          <Link href="/" className="absolute left-1 top-1/12 -translate-y-1/2">
+                    <button className="group flex items-center gap-2 px-5 py-2 rounded-full bg-black/80 border border-purple-500 text-purple-400 hover:text-white hover:border-white transition duration-300 ease-in-out shadow-lg hover:shadow-purple-500/50">
+                        <span className="text-lg transition-transform duration-300 group-hover:-translate-x-1">
+                            <FaArrowLeft />
+                        </span>
+                        <span className="font-semibold">Back</span>
+                    </button>
+                </Link>
 
       {/* Login Card */}
       <div className="w-full max-w-md bg-[#1e1e1e]/90 backdrop-blur-md rounded-xl p-8 shadow-2xl z-10">

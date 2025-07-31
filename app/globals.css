@@ -53,4 +53,8 @@ body {
 .pulse-glow {
   color: #f755e1; /* Purple */
   animation: pulse-glow 2s infinite ease-in-out;
+  box-shadow: 0 0 8px #000000, 0 0 15px #000000;
+  border-radius: 8px;
+  padding: 0.2rem 0.6rem;
 }
+
