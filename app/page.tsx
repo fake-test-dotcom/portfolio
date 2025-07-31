@@ -60,6 +60,11 @@ const stats = [
   { name: 'MERN Stack', value: 'Specialization' },
   { name: 'Both Frontend and Backend', value: 'Stonger side' },
 ]
+const navLinks = [
+  { name: 'About', href: '/about' },
+  { name: 'Experience', href: '/experience' },
+  { name: 'Projects', href: '/projects' },
+]
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -174,15 +179,19 @@ export default function Navbar() {
             </PopoverPanel>
           </Popover>
 
-          {['About', 'Experience', 'Company'].map((item) => (
-            <Link
-              key={item}
-              href="/about"
-              className="text-lg font-semibold text-white-900 transform transition-transform duration-350 ease-in-out hover:scale-150"
-            >
-              {item}
-            </Link>
-          ))}
+     {navLinks.map((item) => (
+  <Link
+    key={item.name}
+    href={item.href}
+    className={`text-xl font-bold transform transition-transform duration-350 ease-in-out hover:scale-150 ${
+      item.name === 'Projects'
+        ? 'pulse-glow'
+        : 'text-white'
+    }`}
+  >
+    {item.name}
+  </Link>
+))}
         </PopoverGroup>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
