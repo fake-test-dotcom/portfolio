@@ -55,22 +55,7 @@ const navLinks = [
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  //modal
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState({
-    title: "",
-    message: "",
-  });
-
-  const handleUnavailableClick = (title: string) => {
-    setModalContent({
-      title,
-      message:
-        "An unexpected error occurred while accessing the database. Please try again, or report the issue if it persists.",
-    });
-    setIsModalOpen(true);
-  };
+  
 
   return (
     <header className="bg-gradient-to-r from-skyblue-300 to-purple-600 shadow-sm">
