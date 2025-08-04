@@ -261,7 +261,10 @@ export default function Navbar() {
       {/* Content */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-       <div className="text-5xl font-semibold tracking-tight text-white sm:text-6xl leading-snug">
+      <div
+  className="text-5xl font-semibold tracking-tight text-white sm:text-6xl leading-snug"
+  style={{ minHeight: '210px' }} // Adjust this based on expected height
+>
   <TypeAnimation
     sequence={[
       'I am Aromal',
@@ -277,6 +280,7 @@ export default function Navbar() {
     className="whitespace-pre-line"
   />
 </div>
+
 
 
           <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
