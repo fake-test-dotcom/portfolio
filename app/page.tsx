@@ -307,14 +307,13 @@ export default function Navbar() {
     </div>
 
   {/* Carousel */}
-<div className="carousel relative w-full h-screen overflow-hidden">
-  {/* Image */}
+<div className="carousel relative w-full h-[250px] sm:h-[300px] md:h-[450px] lg:h-[600px] xl:h-screen overflow-hidden">
   <div className="carousel-item relative w-full h-full">
     <Image
       src="/images/portimage.jpg"
       alt="Slide 1"
-      layout="fill"
-      objectFit="cover"
+      fill
+      className="object-cover w-full h-full"
       priority
     />
 
