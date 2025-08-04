@@ -321,195 +321,24 @@ export default function Navbar() {
       </div>
     </div>
 
-{/* cards section */}
+  {/* Carousel */}
+<div className="carousel relative w-full h-screen overflow-hidden">
+  {/* Image */}
+  <div className="carousel-item relative w-full h-full">
+    <Image
+      src="/images/portimage.jpg"
+      alt="Slide 1"
+      layout="fill"
+      objectFit="cover"
+      priority
+    />
 
-<section className="bg-gray-900 py-20 px-6 relative">
-      {/* Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/50">
-          <div className="bg-gray-800 max-w-md w-full p-6 rounded-[40px] shadow-xl relative text-center">
-            <button
-              onClick={() => setIsModalOpen(false)}
-              className="absolute top-3 right-4 text-white-500 hover:text-red-800 text-xl font-bold"
-            >
-              &times;
-            </button>
-            <h2 className="text-xl font-semibold text-white-800 mb-2">
-              {modalContent.title}
-            </h2>
-            <p className="text-white-600">{modalContent.message}</p>
-          </div>
-        </div>
-      )}
-
-      {/* Section Title */}
-      <div className="max-w-3xl mx-auto text-center mb-16">
-        <h2 className="text-4xl sm:text-5xl font-bold text-white">
-          My Projects
-        </h2>
-        <p className="mt-4 text-lg text-gray-400">
-          A selection of work showcasing my skills in MERN stack development
-        </p>
-      </div>
-
-      {/* Projects Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-
-        {/* Project 1 */}
-        <Link href="https://puzzle-gamma-five.vercel.app">
-          <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
-            <div className="relative w-full h-55"> {/* height defined + relative */}
-               <Image
-                  src="/images/tom.jpg"
-                 alt="Game"
-                 fill
-                 className="object-cover rounded-xl"
-                  />
-            </div>
-            <div className="p-5">
-              <h3 className="text-xl font-semibold text-white mb-2">Image Puzzle</h3>
-              <p className="text-gray-400 text-sm">
-                A responsive Puzzle game built using React Native and Expo
-                which focuses both iOS and Android platform to showcase my work
-                and skills.<br></br>Note: For better experience use a mobile
-                screen
-              </p>
-            </div>
-          </div>
-        </Link>
-          {/* Project 6 */}
-        <Link href="https://ball-one.vercel.app/">
-        <div
-          className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
-        >
-          <div className="relative h-55 w-full">
-            <Image
-              src="/images/ballgame.jpg"
-              alt="Hospital management"
-              width={400}
-               height={250}
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="p-5">
-            <h3 className="text-xl font-semibold text-white mb-2">
-              Ball Shooter 	&#40;Mobile Game&#41;
-            </h3>
-            <p className="text-gray-400 text-sm">
-             Ball Shooter is an interactive arcade-style web
-              game built using Next.js, TypeScript, and the Canvas API. It also supports
-                 touch controls for mobile providing a seamless experience
-                   no matter how you play.
-            </p>
-          </div>
-        </div>
-        </Link>
-
-        {/* Project 2 */}
-        <Link href="https://hospm1.vercel.app/">
-        <div
-          className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
-        >
-          <div className="relative h-55 w-full">
-            <Image
-              src="/images/hospital.jpg"
-              alt="Hospital management"
-              width={400}
-               height={250}
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="p-5">
-            <h3 className="text-xl font-semibold text-white mb-2">
-              Hospital Management
-            </h3>
-            <p className="text-gray-400 text-sm">
-              A full-stack Hospital management system that enables seamless
-              communication between patients and doctors through secure video
-              calls.The system also support patient registration, appointment and scheduling.
-            </p>
-          </div>
-        </div>
-        </Link>
-
-        {/* Project 3 */}
-        <div
-          onClick={() => handleUnavailableClick("Netflix Clone")}
-          className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer"
-        >
-          <div className="relative h-55 w-full">
-            <Image
-              src="/images/Netflix Indian Movies and Web Series.jpg"
-              alt="Netflix clone"
-              width={400}
-               height={250}
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="p-5">
-            <h3 className="text-xl font-semibold text-white mb-2">
-              Netflix Clone
-            </h3>
-            <p className="text-gray-400 text-sm">
-              A Netflix clone made with Express.js and TMDB API to fetch real
-              time movies with a responsive and modern touch
-            </p>
-          </div>
-        </div>
-        {/* Project 4 */}
-        <Link href="https://cargamea1.vercel.app/">
-        <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
-          <div className="relative h-55 w-full">
-            <Image
-              src="/images/front page car.jpg"
-              alt="Black Street X"
-              width={400}
-               height={250}
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="p-5">
-            <h3 className="text-xl font-semibold text-white mb-2">
-              Black Street X
-            </h3>
-            <p className="text-gray-400 text-sm">
-              A fun 3D car game using Next.js and React Three Fiber. 
-              It runs right in the browser and uses GLTF models for the cars
-               and environment to keep things looking smooth and realistic. 
-               You can drive around and enjoy real-time 
-               3D graphics.
-            </p>
-          </div>
-        </div>
-       </Link>
-       {/* Project 5 */}
-        <Link href="https://plurtaskm4.vercel.app/">
-        <div className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
-          <div className="relative h-50 w-full">
-            <Image
-              src="/images/todo1.jpg"
-              alt="todo"
-              width={400}
-               height={250}
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="p-5">
-            <h3 className="text-xl font-semibold text-white mb-2">
-              Plur Task 
-            </h3>
-            <p className="text-gray-400 text-sm">
-              PlurTask is a lightweight, well-optimized to-do application designed 
-              for speed, simplicity, and productivity. With a sleek user interface 
-              and smooth performance, whether you&#39;re organizing your 
-              daily routine or planning long-term goals, PlurTask helps you stay
-               focused with a seamless task management experience.
-            </p>
-          </div>
-        </div>
-       </Link>
-      </div>
-    </section>
+    {/* Overlay Text */}
+    <div className="absolute inset-0 flex flex-col justify-center items-center bg-transparent bg-opacity-40 text-black text-center px-4">
+      <h1 style={{marginTop:'450px',marginRight:'860px'}} className="text-4xl md:text-2xl font-bold mb-2">Aromal M G</h1>
+    </div>
+  </div>
+</div>
 
 
 {/* footer */}
