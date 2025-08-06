@@ -314,17 +314,12 @@ export default function Navbar() {
 <div className="carousel relative w-full h-[250px] sm:h-[300px] md:h-[450px] lg:h-[600px] xl:h-screen overflow-hidden">
   <div className="carousel-item relative w-full h-full">
     <Image
-      src="/images/portimage.jpg"
+      src="/images/portfolio (f).png"
       alt="Slide 1"
       fill
       className="object-cover w-full h-full"
       priority
     />
-
-    {/* Overlay Text */}
-    <div className="absolute inset-0 flex flex-col justify-center items-center bg-transparent bg-opacity-40 text-black text-center px-4">
-      <h1 style={{marginTop:'450px',marginRight:'860px'}} className="text-4xl md:text-2xl font-bold mb-2">Aromal M G</h1>
-    </div>
   </div>
 </div>
 
